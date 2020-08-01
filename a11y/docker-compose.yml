@@ -1,0 +1,7 @@
+version: '3'
+services:
+  fop:
+    image: hub.tollwerk.net/tollwerk/ant:latest
+    command: -buildfile fop/build.xml
+    volumes:
+      - ..:/src
